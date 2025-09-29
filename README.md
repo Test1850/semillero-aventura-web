@@ -3,3 +3,85 @@ Este es un repositorio para el semillero de aventura web donde nos construiremos
 
 ## Santiago Sanchez C.
 Esto lo personalizaremos luego
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Snake 🥶</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Test game 😶‍🌫️</h1>
+    </header>
+    </header>
+    <section class="hud"></section>
+     <div class="stats">
+        <div class="stat"><span>Puntaje:</span> <span id="scoreBoard">0</span></div>
+        <div class="stat"><span>Best:</span> <span id="bestBoard">0</span></div>
+        <div class="stat"><span>Longitud:</span> <span id="lengthBoard">0</span></div>
+        <div class="stat"><span>Nivel:</span> <span id="levelBoard">1</span></div>
+        <div class="stat"><span>Velocidad:</span> <span id="speedBoard">100ms</span></div>
+        <div class="stat"><span>Tiempo:</span> <span id="timeBoard">00:00</span></div>
+     </div>
+     <div class="controls">
+        <div class="control-group">
+            <label for="sizeSelect">Tamaño</label>
+            <select  id="sizeSelect">
+                <option value="10" selected>10x10</option>
+                <option value="12">12x12</option>
+                <option value="15">15x15</option>
+                <option value="20">20x20</option>
+            </select>
+        </div>
+
+        <div class="control-group">
+            <label for="speedSelect">Velocidad</label>
+            <select  id="speedSelect">
+                <option value="150" selected>Lenta</option>
+                <option value="100">Normal</option>
+                <option value="70">Rapido</option>
+                <option value="50">Insano</option>
+            </select>
+        </div>
+        <div class="control-group">
+            <label for="modeSelect">Modo</label>
+            <select  id="modeSelect">
+                <option value="walls" selected>Paredes</option>
+                <option value="wrap">Teletransportarse</option>
+
+            </select>
+        </div>
+        <div class="control-group">
+            <label for="skinSelect">Skin</label>
+            <select  id="skinSelect">
+                <option value="classic" selected>Clasico</option>
+                <option value="red">Rojo</option>
+                <option value="retro">Retro</option>
+                <option value="blue">Azul</option>
+            </select>
+        </div>
+        <div class="control-group">
+            <label for="volumeSlider">Volumen</label>
+            <input type="range" id="volumeSlider" min="0" max="100" value="40">
+     </div>
+     <button id="start">Start 👌</button> 
+     <button id="pause">Pause 👺</button> 
+     </section>
+     <div class="board"></div>
+     <section class="help">
+     <p>Instruccion: </p>
+    </section>
+     <div id="gameOver" class="overlay">
+          <div class="overlay-card">
+            <h2>Game Over ☠️</h2>
+            <p>Mejor Puntaje: <span id="finalBest">0</span> </p>
+            <p>Puntaje: <span id="finalScore">0</span> </p>
+            <div class="overlay-actions">
+                <button id="restart">Restart 🤦‍♂️</button>  
+            </div>
+            <p class="hint">Pulsa <kbd> R </kbd>para reiniciar o <kbd>Enter</kbd> para empezar un nuevo juego</p>
+          </div>  
+     </div>
+</body>
+</html>
